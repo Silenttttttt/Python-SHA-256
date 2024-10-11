@@ -63,9 +63,11 @@ def sha256(message):
 
     return ''.join(f'{x:08x}' for x in h)
 
-# Example usage
-message = b"hello world"
 
-# Custom SHA-256 implementation
-hash = sha256(message)
-print(f"SHA-256: {custom_hash}")
+if __name__ == "__main__":
+    # Example usage
+    message = b"hello world"
+
+    # Custom SHA-256 implementation
+    hash = sha256(message)
+    print(f"SHA-256: {custom_hash}")
